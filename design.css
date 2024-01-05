@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+ } 
+
+ body{
+    overflow: hidden;
+    display: flex;
+ }
+
+ .container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+ }
+
+ nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+ }
+
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #7f00ff;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    }
+
+b{
+    font-size: 70px;
+    color: #ff7f07;
+}
+
+.navItems{
+    display: flex;
+}
+
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navItems li a{
+    display: flex;
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: 3s;
+}
+
+.navItems li:hover a{
+    color: #ff7f07;
+    margin-top: 3%;
+}
+.navItems li a.active {
+    color: #ff7f07;
+}
+
+.links a{
+    font-size: 25px;
+    color: #3d535f;
+    margin: 25px 10px;
+}
+
+@media (max-width: 992px){
+    .navItems .links,
+    .navItems .a {
+    display: block;
+    }
+}
+
+.navItems .toggle-btn{
+    display: block;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    left: 10%;
+    top:40%;
+    background: linear-gradient(45deg, #ff7f07, pink);
+    animation: object1 9s linear infinite;
+}
+
+@keyframes object1{
+    50%{
+        left: -3%;
+        top: 50%;
+    }
+}
+
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 45%;
+    top:10%;
+    background: linear-gradient(45deg, #0026ff, pink);
+    animation: object2 4s linear infinite;
+}
+
+@keyframes object2{
+    50%{
+        left: 46%;
+        top: 12%;
+    }
+}
+
+ .cols{
+    width: 50%;
+ }
+
+.cols0{
+    width: 60%;
+    z-index: 9;
+}
+
+ .topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color:#3d535f;
+ }
+
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #ff7f07;
+}
+
+h1{
+    display: block;
+    font-size: 3.5em;
+    font-weight: 900;
+    color: #3d535f;
+}
+
+.multitext{
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+
+h2{
+    display: flex;
+    font-size: 2.5em;
+    margin-top: 15px;
+    color: #ff7f07;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+
+.btns{
+    width: 100%;
+    position: relative;
+    left: 100px;
+}
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 8px 15px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 12px 10px rgba(0,0,0,0,4);
+}
+
+button:hover{
+    background-color: #ff7f07;
+}
+
+.imgbox{
+    position: relative;
+    width: 85%;
+    height: 85%;
+}
+
+.imgbox img{
+    display: flex;
+    position: relative;
+    border-radius: 15%;
+    height: 100%;
+    width: calc(130% - 80px);
+    top: 2;
+    right: -75px;
+    transform: rotateY(180deg);
+    animation: animateUser 4s linear infinite;
+}
+
+@keyframes animateUser {
+    50%{
+        right: -60px;
+        top: 0;
+    }
+}
+
+.imgbox #splash{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    50%{
+        top: 49%;
+        left: 51%;
+        width: 155%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* src img:"" class:splash*/
+
+
+/*<script src="https://cdn.jsdelivr.net/npm/typed.js@2.12"> </script>
+      <script>
+            var typingEffect = new typed(".multitext",{
+            Strings : ["coder","youtuber","designer"],
+            })
+    </script>
+*/
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">Portfolio<b>.</b></div>
+             <ul class="navItems">
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#About">About</a></li>   
+                <li><a href="#skills">skills</a></li>   
+                <li><a href="#Contact Me">Contact Me</a></li>   
+             </ul>
+             <div class="links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </nav>
+
+  <div class="wrapper">
+      <div class="cols cols0">
+              <span class="topline">Hello, It's Me</span>
+                 <h2><i>AVOTRINIAINA Njakatiana</i></h2>
+                  <h1> And  I'm <span class="multitext">Coder</span></h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi blanditiis quo ipsum. Amet esse accusantium voluptatum eum aliquid necessitatibus eos voluptates aspernatur sunt minima suscipit voluptate libero beatae sequi, ducimus magni natus incidunt odio, reprehenderit vel quas similique molestias. Officia assumenda quo et obcaecati nemo?</p>
+                  <div class="btns">
+             <button>download CV</button>
+        <button>hire me</button>
+      </div>
+  </div>
+            <div class="cols cpls1">
+                <div class="imgbox">
+                 <img src="Images/image2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scroll reveal -->
+     <script src="https://unpg.com/scrollreveal"></script>
+ 
+   <!-- typed js -->
+
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+     <script>
+        const typed = new typed('.multitext', {
+             strings: ['Coder', 'Youtuber', 'Designer'],
+             loop : true,
+             typeSpeed : 100,
+             backSpeed : 80,
+             backDelay : 1500
+});
+     </script>
+
+    <!-- custom js -->
+     <script src="script.js"></script>
+
+</body>
+</html>
